@@ -1,0 +1,57 @@
+[{
+  "modulename": "communication__data_blacklistservice",
+  "instancename": "Blacklist",
+  "propertyhash": {
+    "storage": {
+      "modulename": "allex_mongostorage",
+      "propertyhash": {
+        "server": "127.0.0.1",
+        "database": "mailingtest",
+        "table": "blacklist"
+      }
+    }
+  }
+},{
+  "modulename": "communication__data_historyservice",
+  "instancename": "History",
+  "propertyhash": {
+    "storage": {
+      "modulename": "allex_mongostorage",
+      "propertyhash": {
+        "server": "127.0.0.1",
+        "database": "mailingtest",
+        "table": "history",
+        "_nativeid": true
+      }
+    }
+  }
+},{
+  "modulename": "communication_dbopsservice",
+  "instancename": "DBOps",
+  "propertyhash": {
+    "senderlibs": [{
+      "modulename": "mailing:aws:lib",
+      "propertyhash": {
+        "apiVersion": "2010-12-01",
+        "region": "us-east-1"
+      }
+    }],
+    "blacklistdbpath": "Blacklist",
+    "blacklistagedays": "20",
+    "historydbpath": "History"
+  }
+},{
+  "modulename": "communication_senderservice",
+  "instancename": "Sender",
+  "propertyhash": {
+    "sender": "lukapetrovicsi@gmail.com",
+    "communicationdbopspath": "DBOps"
+  }
+},{
+  "modulename": "mailing_awsnotificationhandlerservice",
+  "instancename": "AWSNotifications",
+  "propertyhash": {
+    "port": 8201,
+    "communicationdbopspath": "DBOps"
+  }
+}]

@@ -1,0 +1,12 @@
+[
+{"username": "allex", "namespace": null, "group": "services", "type": "npm", "user": "git", "server": "github.com", "repogroup": "allex-services"},
+{"username": "allex", "namespace": null, "group": "libs", "type": "npm", "user": "git", "server": "github.com", "repogroup": "allex-libs"},
+{"username": "allex", "namespace": null, "group": "storages", "type": "npm", "user": "git", "server": "github.com", "repogroup": "allex-storages"},
+{"username": "allex", "namespace": null, "group": "parsers", "type": "npm", "user": "git", "server": "github.com", "repogroup": "allex-parsers"},
+{"username": "communication", "namespace": null, "group": "services", "type": "npm", "user": "git", "server": "github.com", "repogroup": "communication-services"},
+{"username": "communication", "namespace": null, "group": "libs", "type": "npm", "user": "git", "server": "github.com", "repogroup": "communication-libs"},
+{"username": "communication", "namespace": "data", "group": "services", "type": "npm", "user": "git", "server": "github.com", "repogroup": "communication-data-services"},
+{"username": "mailing", "namespace": null, "group": "services", "type": "npm", "user": "git", "server": "github.com", "repogroup": "mailing-services"},
+{"username": "mailing", "namespace": null, "group": "libs", "type": "npm", "user": "git", "server": "github.com", "repogroup": "mailing-libs"},
+{"username": "mailing", "namespace": "data", "group": "services", "type": "npm", "user": "git", "server": "github.com", "repogroup": "mailing-data-services"}
+]
